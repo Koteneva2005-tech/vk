@@ -120,8 +120,8 @@ def main() -> None:
     )
     parser.add_argument(
         "--url",
-        default=None,
-        help="Если указать, HTML будет скачан с этого адреса вместо чтения файла.",
+        default=DEFAULT_URL,
+        help=f"Если указать, HTML будет скачан с этого адреса (по умолчанию {DEFAULT_URL}). Чтобы использовать локальный файл, передайте пустую строку: --url \"\".",
     )
     parser.add_argument(
         "--save-html",
